@@ -86,7 +86,7 @@ return function(module)
     box.schema.func.create("truncate", { if_not_exists = true })
   end
 
-  if configuration.environment == "local" then
+  if configuration.environment == "local" and configuration.console ~= false then
     require('console').start()
   end
 end

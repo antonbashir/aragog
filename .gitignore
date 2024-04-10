@@ -1,2 +1,4 @@
 *.snap
 *.xlog
+test/test
+modules/test

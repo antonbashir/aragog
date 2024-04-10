@@ -4,6 +4,7 @@ return {
     user = "reloader",
     password = "test",
   },
+  console = false,
   modules = {
     test = {
       user = "test",
