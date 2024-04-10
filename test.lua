@@ -1,0 +1,1 @@
+require("initialization.boot")("test")
