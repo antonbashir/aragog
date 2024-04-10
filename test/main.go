@@ -46,7 +46,7 @@ func main() {
 	if err != nil {
 		fmt.Println("Error:", err)
 	} else {
-		fmt.Println("Data:", data)
+		fmt.Println("Data before reload:", data)
 	}
 
 	os.WriteFile("storage/constants/init.lua", []byte("return { value = 43 }"), fs.FileMode(os.O_TRUNC))
@@ -60,6 +60,6 @@ func main() {
 	if err != nil {
 		fmt.Println("Error:", err)
 	} else {
-		fmt.Println("Data:", data)
+		fmt.Println("Data after reload:", data)
 	}
 }
